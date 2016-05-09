@@ -1,0 +1,42 @@
+﻿@model WebApplication2.Models.Bilete
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Bilete</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Spectacol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Spectacol)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.rand)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.rand)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.numar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.numar)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BileteiD }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
